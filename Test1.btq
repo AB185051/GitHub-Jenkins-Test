@@ -1,6 +1,6 @@
 .LOGON 153.65.14.249/abhishekb,abhishekb;
 
-.SET MAXERROR 2
+.SET MAXERROR 1
 .SET ERRORLEVEL 3807 SEVERITY 0; /* Ignore "Table does not exist" error  */
 
 DROP TABLE DEVOPS.OPB_SUBJECT_DEVOPS_TEST;
