@@ -1,5 +1,3 @@
-bteq << EOF
-
 .LOGON 153.65.14.249/abhishekb,abhishekb;
 
 .SET MAXERROR 2
@@ -37,5 +35,3 @@ SELECT * FROM ETL_META.OPB_SUBJECT;
 
 .LOGOFF;
 .QUIT;
-
-EOF
