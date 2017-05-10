@@ -1,1 +1,1 @@
-touch e:/demo/test.txt
+touch /var/lib/jenkins/TD_TEST/test.txt
