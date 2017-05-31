@@ -9,7 +9,8 @@ REPLACE VIEW ETL_META."TD_SYSTEMS"
        ,ENVIRONMENT
        ,STATUS
        ,count(*) as CNT  FROM ETL_META.TD_SYSTEMS_EDW
-	   group by 1,2,3;
+  group by 1,2,3;
 	  
 .LOGOFF;
 .QUIT;
+
