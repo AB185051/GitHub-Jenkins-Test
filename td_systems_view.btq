@@ -1,0 +1,15 @@
+.LOGON 153.65.14.249/abhishekb,abhishekb;
+
+.SET MAXERROR 1
+.SET ERRORLEVEL 3807 SEVERITY 0; /* Ignore "Table does not exist" error  */
+
+REPLACE VIEW ETL_META."TD_SYSTEMS"
+  AS LOCKING ROW FOR ACCESS
+  Select PROJECT
+       ,ENVIRONMENT
+       ,STATUS
+       ,count(*) as CNT  FROM ETL_META.TD_SYSTEMS_EDW
+	   group by 1,2,3;
+	  
+.LOGOFF;
+.QUIT;
